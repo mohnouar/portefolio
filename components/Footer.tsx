@@ -19,7 +19,7 @@ const Footer = () => {
             <p className='text-center max-sm:mb-3'>Copyright &#169; 2024 Mohamed Nouar</p>
             <div className='flex gap-3 max-sm:justify-center'>
                 {socialMedia.map((item)=>(
-                    <div className='bg-black-200 rounded-lg border border-white/[0.1] p-2.5'>
+                    <div className='bg-black-200 rounded-lg border border-white/[0.1] p-2.5' key={item.id}>
                         <img src={item.img} alt={item.img} className='size-5 '/>
                     </div>
                 ))}
